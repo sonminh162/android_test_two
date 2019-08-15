@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message"
+    android:background="@color/ghostWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <View
+        android:id="@+id/message_header"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp90"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:textColor="@color/midnightExpress2_80percent"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/sp20"
+        android:layout_marginTop="@dimen/dp48"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/inbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/dp19"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20" />
+
+    <View
+        android:id="@+id/footer_message"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp82"/>
+
+    <View
+        android:background="@drawable/footer_box"
+        android:layout_marginBottom="@dimen/dp9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp146"
+        android:layout_height="@dimen/dp5"/>
+
+    <Button
+        android:background="@drawable/home_message"
+        android:id="@+id/button_home"
+        android:layout_marginStart="@dimen/dp33"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp16"
+        app:layout_constraintTop_toTopOf="@id/footer_message"
+        android:layout_width="@dimen/dp26"
+        android:layout_height="@dimen/dp26" />
+
+    <ImageButton
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/plus"
+        android:id="@+id/add_button"
+        app:layout_constraintTop_toTopOf="@id/button_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/button_home"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:contentDescription="@string/anything_6" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:src="@drawable/yo"
+        android:id="@+id/user_img"
+        app:layout_constraintBottom_toBottomOf="@id/button_home"
+        app:layout_constraintTop_toTopOf="@id/button_home"
+        android:layout_marginEnd="@dimen/dp33"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40" />
+
+    <Button
+        android:background="@drawable/commend_message"
+        android:id="@+id/button_comment"
+        app:layout_constraintBottom_toBottomOf="@id/button_home"
+        app:layout_constraintTop_toTopOf="@id/button_home"
+        app:layout_constraintEnd_toStartOf="@id/add_button"
+        app:layout_constraintStart_toEndOf="@id/button_home"
+        android:layout_width="@dimen/dp26"
+        android:layout_height="@dimen/dp26" />
+
+    <Button
+        android:background="@drawable/ic_notify"
+        android:id="@+id/notify"
+        app:layout_constraintBottom_toBottomOf="@id/button_home"
+        app:layout_constraintTop_toTopOf="@id/button_home"
+        app:layout_constraintEnd_toStartOf="@id/user_img"
+        app:layout_constraintStart_toEndOf="@id/add_button"
+        android:layout_width="@dimen/dp26"
+        android:layout_height="@dimen/dp26" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_recycler_view"
+        app:layout_constraintBottom_toTopOf="@id/footer_message"
+        app:layout_constraintTop_toBottomOf="@id/message_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

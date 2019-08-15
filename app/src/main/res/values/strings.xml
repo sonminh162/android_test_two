@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="anything_1">anything_1</string>
+    <string name="anything_2">anything_2</string>
+    <string name="hello">Hello again.
+Welcome back.</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="email_example">olson.minnie@ellen.biz</string>
+    <string name="password">PASSWORD</string>
+    <string name="password_example">12345678</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="hello_am2">Hello! \n Sign up to get started.</string>
+    <string name="anything_3">anything_3</string>
+    <string name="anything_4">anything_4</string>
+    <string name="full_name_tv">FULL NAME</string>
+    <string name="new_to_friendly_desi">New to Friendly Desi?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="full_name_example">Minnie Olson</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="under_spinner">Chicago, IL 60611, USA</string>
+    <string name="example1">Martin Palmer</string>
+    <string name="example2">Today, 03:24 PM</string>
+    <string name="example3">What is the loop of Creation? How is there something from nothing? In spite of the fact that it is impossible to prove that anythin….</string>
+    <string name="anything_5">anything_5</string>
+    <string name="example5">$340.00</string>
+    <string name="anything_6">anything_6</string>
+    <string name="inbox">Inbox</string>
+    <string name="example7">Vernon Bradley</string>
+    <string name="example8">Shall we meet today?</string>
+    <string name="time_example">5 : 45 PM</string>
+    <string name="anything7">1</string>
+    <string name="title_dialog">Information</string>
+    <string name="message_dialog">Sign Up Successful</string>
+    <string name="next_activity">Back</string>
+    <string name="enter_password">enter password</string>
+</resources>

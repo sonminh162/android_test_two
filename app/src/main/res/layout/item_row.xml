@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_row"
+    android:background="@color/ghostWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_marginEnd="@dimen/dp9"
+        android:layout_marginStart="@dimen/dp9"
+        android:id="@+id/container"
+        android:background="@drawable/container_box"
+        android:layout_marginBottom="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp0"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/item_view_avatar"
+        android:background="@drawable/avatar_example1"
+        android:layout_marginTop="@dimen/dp13"
+        android:layout_marginStart="@dimen/dp13"
+        app:layout_constraintTop_toTopOf="@id/container"
+        app:layout_constraintStart_toStartOf="@id/container"
+        android:layout_width="@dimen/dp36"
+        android:layout_height="@dimen/dp36" />
+
+    <TextView
+        android:id="@+id/item_view_name"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/midnightExpress"
+        android:textSize="@dimen/sp15"
+        android:text="@string/example1"
+        android:layout_marginStart="@dimen/dp10"
+        app:layout_constraintTop_toTopOf="@id/item_view_avatar"
+        app:layout_constraintStart_toEndOf="@id/item_view_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_view_time"
+        android:layout_marginStart="@dimen/dp10"
+        android:text="@string/example2"
+        android:textColor="@color/midnightExpress_40percent"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/sp10"
+        android:layout_marginTop="@dimen/dp3"
+        app:layout_constraintTop_toBottomOf="@id/item_view_name"
+        app:layout_constraintStart_toEndOf="@id/item_view_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <Button
+        android:background="@drawable/ic_menu_dots"
+        android:layout_marginEnd="@dimen/dp14"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintBottom_toBottomOf="@id/item_view_avatar"
+        app:layout_constraintTop_toTopOf="@id/item_view_avatar"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp5" />
+
+    <TextView
+        android:id="@+id/item_view_content"
+        android:layout_marginTop="@dimen/dp11"
+        android:layout_marginEnd="@dimen/dp13"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        android:text="@string/example3"
+        app:layout_constraintTop_toBottomOf="@id/item_view_time"
+        app:layout_constraintStart_toStartOf="@id/item_view_time"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/item_view_img"
+        android:src="@drawable/rectangle_copy"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintTop_toBottomOf="@id/item_view_content"
+        app:layout_constraintEnd_toEndOf="@id/item_view_content"
+        app:layout_constraintStart_toStartOf="@id/item_view_time"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/anything_5" />
+
+    <Button
+        android:background="@drawable/ic_like_item"
+        android:id="@+id/item_view_like"
+        android:layout_marginBottom="@dimen/dp13"
+        app:layout_constraintBottom_toBottomOf="@id/container"
+        android:layout_marginTop="@dimen/dp20"
+        app:layout_constraintTop_toBottomOf="@id/item_view_img"
+        app:layout_constraintStart_toStartOf="@id/item_view_content"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp20" />
+
+    <Button
+        android:background="@drawable/ic_comment_item"
+        android:id="@+id/item_view_comment"
+        android:layout_marginStart="@dimen/dp20"
+        app:layout_constraintStart_toEndOf="@id/item_view_like"
+        app:layout_constraintBottom_toBottomOf="@id/item_view_like"
+        app:layout_constraintTop_toTopOf="@id/item_view_like"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp20" />
+
+    <TextView
+        android:id="@+id/item_view_price"
+        android:textColor="@color/midnightExpress"
+        android:textStyle="bold"
+        android:text="@string/example5"
+        android:textSize="@dimen/sp15"
+        android:layout_marginEnd="@dimen/dp16"
+        app:layout_constraintEnd_toEndOf="@id/container"
+        app:layout_constraintBottom_toBottomOf="@id/item_view_like"
+        app:layout_constraintTop_toTopOf="@id/item_view_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

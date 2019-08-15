@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SignUpScreen">
+
+    <ImageView
+        android:id="@+id/am2_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/anything_1"
+        android:src="@drawable/blob_bg_am2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/am2_button_back"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp44"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:padding="@dimen/dp10"
+        android:lineHeight="@dimen/sp27"
+        android:id="@+id/hello_am2"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/sp18"
+        android:textAlignment="center"
+        android:text="@string/hello_am2"
+        app:layout_constraintTop_toBottomOf="@id/am2_button_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp246"
+        android:layout_height="wrap_content"
+        tools:ignore="UnusedAttribute" />
+
+    <ImageView
+        android:src="@drawable/glitters"
+        app:layout_constraintEnd_toEndOf="@id/im_center"
+        app:layout_constraintStart_toStartOf="@id/im_center"
+        android:layout_marginTop="@dimen/dp20"
+        app:layout_constraintTop_toTopOf="@id/im_center"
+        android:layout_width="@dimen/dp221"
+        android:layout_height="@dimen/dp65"
+        android:contentDescription="@string/anything_4" />
+    
+    <ImageView
+        android:id="@+id/im_center"
+        android:layout_width="@dimen/dp101"
+        android:layout_height="@dimen/dp102"
+        android:layout_marginTop="@dimen/dp36"
+        android:src="@drawable/profile_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello_am2"
+        android:contentDescription="@string/anything_3" />
+
+    <TextView
+        android:id="@+id/full_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp44"
+        android:layout_marginEnd="@dimen/dp38"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="@string/full_name_tv"
+        android:textColor="@color/warmGrey"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im_center" />
+
+    <View
+        android:id="@+id/full_name_bottom_line"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp37"
+        android:layout_marginEnd="@dimen/dp38"
+        android:background="@color/blackRussianOpacity"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_tv" />
+
+    <EditText
+        android:letterSpacing="0.2"
+        android:id="@+id/full_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:autofillHints=""
+        android:background="@null"
+        android:inputType="text"
+        android:text="@string/full_name_example"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintBottom_toTopOf="@id/full_name_bottom_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_tv"
+        tools:ignore="LabelFor,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/email_address_am2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginEnd="@dimen/dp38"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="@string/email_address"
+        android:textColor="@color/midnightExpress2_50percent"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/full_name_bottom_line" />
+
+    <View
+        android:id="@+id/email_bottom_line_am2"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp37"
+        android:layout_marginEnd="@dimen/dp38"
+        android:background="@color/blackRussianOpacity"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_address_am2" />
+
+    <EditText
+        android:letterSpacing="0.2"
+        android:id="@+id/email_address_value_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:autofillHints=""
+        android:background="@null"
+        android:inputType="textEmailAddress"
+        android:text="@string/email_example"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintBottom_toTopOf="@id/email_bottom_line_am2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_address_am2"
+        tools:ignore="LabelFor,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/password_am2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginEnd="@dimen/dp38"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.2"
+        android:text="@string/password"
+        android:textColor="@color/midnightExpress2_50percent"
+        android:textSize="@dimen/sp10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_bottom_line_am2" />
+
+    <View
+        android:id="@+id/password_line_am2"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp37"
+        android:layout_marginEnd="@dimen/dp38"
+        android:background="@color/blackRussianOpacity"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_am2" />
+
+    <EditText
+        android:hint="@string/enter_password"
+        android:letterSpacing="0.2"
+        android:id="@+id/password_value_am2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp38"
+        android:autofillHints=""
+        android:background="@null"
+        android:inputType="textPassword"
+        android:text="@string/email_example"
+        android:textSize="@dimen/sp15"
+        app:layout_constraintBottom_toTopOf="@id/password_line_am2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_am2"
+        tools:ignore="LabelFor,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/button_sign_up"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp47"
+        android:layout_marginStart="@dimen/dp38"
+        android:layout_marginTop="@dimen/dp45"
+        android:layout_marginEnd="@dimen/dp38"
+        android:background="@drawable/button_box"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:text="@string/sign_up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_line_am2" />
+
+    <TextView
+        android:textColor="@color/blackRussian_50"
+        android:id="@+id/under_button_am2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp28_5"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_sign_up" />
+
+    <TextView
+        android:textColor="@color/Cerise"
+        android:id="@+id/sign_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp5"
+        android:text="@string/sign_in"
+        app:layout_constraintBottom_toBottomOf="@+id/under_button_am2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/under_button_am2"
+        app:layout_constraintTop_toTopOf="@+id/under_button_am2" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/dp55_5"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp63_5"
+        android:layout_marginEnd="@dimen/dp0"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bottom_blob"
+        app:layout_constraintTop_toBottomOf="@id/under_button_am2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/anything_1" />
+
+    <View
+        android:background="@drawable/footer_box"
+        android:layout_marginTop="@dimen/dp106"
+        app:layout_constraintTop_toBottomOf="@id/under_button_am2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="@dimen/dp146"
+        android:layout_height="@dimen/dp5"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
